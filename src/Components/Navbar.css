@@ -1,0 +1,101 @@
+img {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  height: auto;
+  border-radius: 20px;
+  height: 100px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #975e52;
+}
+
+.lang-btn, .dark-mode-btn {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.lang-btn:hover, .dark-mode-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center all items in the navbar */
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    order: 2; /* Move the logo to the bottom */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 140px; /* Adjust logo size for mobile */
+    border-radius: 10px; /* Optional: make it circular for style */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add some depth to the logo */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem;
+    width: 100%;
+    align-items: center; /* Center links horizontally */
+  }
+
+  .nav-link {
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+    padding: 10px 0;
+    width: auto; /* Allow links to auto-adjust width */
+    text-align: center;
+  }
+
+  .lang-btn, .dark-mode-btn {
+    font-size: 1.2rem;
+    width: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+button{
+  width: 150px;
+}

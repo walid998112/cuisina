@@ -1,0 +1,59 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+  }
+  
+  button:disabled {
+    background-color: #786e6c;
+    cursor: not-allowed;
+  }
+  
+  span {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .pagination {
+      flex-direction: column;
+    }
+  
+    button {
+      margin: 0.5rem 0;
+    }
+  }
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  button.active {
+    font-weight: bold;
+    color: #862323;
+  }
+  

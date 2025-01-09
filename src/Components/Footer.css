@@ -1,0 +1,39 @@
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+  }
+  
+  .social-media {
+    margin-top: 0.5rem;
+  }
+  
+  .social-media a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.8rem;
+    }
+  
+    .social-media a {
+      font-size: 1.2rem;
+    }
+  }
+  
